@@ -166,16 +166,18 @@ namespace QLBHinSQL
             {
                 SanPham sp = sanPham();
                 string query = $"Update QLBH set TenSP = N'{sp.TenSP}',NgaySX = '{sp.NgaySX}',NgayHH = '{sp.NgayHH}',DonVi = '{sp.DonVi}',DonGia = '{sp.DonGia}',GhiChu = N'{sp.GhiChu}' where MaSP = '{txtMaSP.Text.Trim()}'";
-                    try
-                    {
-                        db.Excute(query);
-                        MessageBox.Show("Update thành công!", "Thông báo");
-                        Form1_Load(sender, e);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex.Message);
-                    }    
+                try
+                {
+                    db.Excute(query);
+                    MessageBox.Show("Update thành công!", "Thông báo");
+                    Form1_Load(sender, e);
+                   
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }    
             }
             if (btnXoa.Enabled)
             {
@@ -185,6 +187,9 @@ namespace QLBHinSQL
                     db.Excute(query);
                     MessageBox.Show("Xóa thành công!", "Thông báo");
                     Form1_Load(sender, e);
+                    resetForm();
+                    stateGB(false);
+                    StateDisableButton(true);
                 }
                 catch (Exception ex)
                 {
