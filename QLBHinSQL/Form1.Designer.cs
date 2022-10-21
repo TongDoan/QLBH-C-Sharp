@@ -63,6 +63,7 @@
             this.dgvKetQua = new System.Windows.Forms.DataGridView();
             this.pdfConfig1 = new Syncfusion.Pdf.PdfConfig();
             this.xlsIOConfig1 = new Syncfusion.XlsIO.XlsIOConfig();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gbChiTiet.SuspendLayout();
@@ -73,6 +74,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.lbTieuDe);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -108,9 +110,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(827, 38);
+            this.button1.Location = new System.Drawing.Point(830, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 32);
+            this.button1.Size = new System.Drawing.Size(108, 32);
             this.button1.TabIndex = 21;
             this.button1.Text = "Export Excel";
             this.button1.UseVisualStyleBackColor = true;
@@ -130,7 +132,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(622, 38);
+            this.btnXoa.Location = new System.Drawing.Point(635, 38);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(98, 32);
             this.btnXoa.TabIndex = 19;
@@ -141,7 +143,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(435, 38);
+            this.btnSua.Location = new System.Drawing.Point(448, 38);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(98, 32);
             this.btnSua.TabIndex = 18;
@@ -152,7 +154,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(247, 38);
+            this.btnThem.Location = new System.Drawing.Point(241, 38);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(98, 32);
             this.btnThem.TabIndex = 17;
@@ -163,7 +165,7 @@
             // btnTimkiem
             // 
             this.btnTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimkiem.Location = new System.Drawing.Point(77, 38);
+            this.btnTimkiem.Location = new System.Drawing.Point(32, 38);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(98, 32);
             this.btnTimkiem.TabIndex = 16;
@@ -410,6 +412,17 @@
             this.dgvKetQua.TabIndex = 0;
             this.dgvKetQua.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKetQua_CellContentClick);
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(1024, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 35);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Report";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -476,6 +489,7 @@
         private Syncfusion.XlsIO.XlsIOConfig xlsIOConfig1;
         private System.Windows.Forms.DataGridView dgvKetQua;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

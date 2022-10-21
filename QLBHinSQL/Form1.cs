@@ -308,5 +308,11 @@ namespace QLBHinSQL
                MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                         this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 fom = new Form2();
+            fom.ShowDialog();
+        }
     }
 }
